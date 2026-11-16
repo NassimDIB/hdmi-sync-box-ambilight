@@ -37,7 +37,7 @@ Commands:
 - `WS2811BB_Invert 0|1`: default 1 (idle high, pulses low).
 - `WS2811BB_Calib`: measures the real bit period, result in `/lograw`.
 
-Limits: one frame is at most 450 bytes (150 RGB pixels), because it is sent with interrupts disabled. BK7231N only.
+Limits: one frame is at most 450 bytes (150 RGB pixels), because it is sent with interrupts disabled. BK7231N only, and only for the standard SDK build: the `main` patch does not enable the driver for `OpenBK7231N_ALT` (`beken_freertos_sdk`), where it has not been tested.
 
 ## Hardware notes
 

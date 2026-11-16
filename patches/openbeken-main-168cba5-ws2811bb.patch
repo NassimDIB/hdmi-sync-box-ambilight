@@ -335,7 +335,7 @@ index 0000000..9641c6f
 +
 +#endif
 diff --git a/src/obk_config.h b/src/obk_config.h
-index 9b41b1f..6f37378 100644
+index 9b41b1f..54d0cdc 100644
 --- a/src/obk_config.h
 +++ b/src/obk_config.h
 @@ -329,6 +329,9 @@
@@ -343,7 +343,7 @@ index 9b41b1f..6f37378 100644
  #define ENABLE_DRIVER_SM15155E					1
  
 +#endif
-+#if PLATFORM_BK7231N
++#if PLATFORM_BK7231N && !PLATFORM_BEKEN_NEW
 +#define ENABLE_DRIVER_WS2811BB					1
  #endif
  // parse things like $CH1 or $hour etc

@@ -37,7 +37,7 @@ Commandes :
 - `WS2811BB_Invert 0|1` : 1 par défaut (repos haut, impulsions basses).
 - `WS2811BB_Calib` : mesure la période réelle d'un bit, résultat dans `/lograw`.
 
-Limites : une trame fait 450 octets au maximum (150 pixels RGB), car elle est envoyée interruptions coupées. BK7231N uniquement.
+Limites : une trame fait 450 octets au maximum (150 pixels RGB), car elle est envoyée interruptions coupées. BK7231N uniquement, et seulement pour le build avec le SDK standard : le patch pour `main` n'active pas le driver pour `OpenBK7231N_ALT` (`beken_freertos_sdk`), où il n'a pas été testé.
 
 ## Notes matérielles
 
