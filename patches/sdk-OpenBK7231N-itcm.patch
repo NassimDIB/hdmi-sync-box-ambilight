@@ -1,0 +1,12 @@
+diff --git a/platforms/bk7231n/bk7231n_os/beken378/build/bk7231n_ota.ld b/platforms/bk7231n/bk7231n_os/beken378/build/bk7231n_ota.ld
+index 4604d9a..3e747cf 100755
+--- a/platforms/bk7231n/bk7231n_os/beken378/build/bk7231n_ota.ld
++++ b/platforms/bk7231n/bk7231n_os/beken378/build/bk7231n_ota.ld
+@@ -59,6 +59,7 @@ SECTIONS
+         /* itcm 8KB code */
+         *(.text.intc_hdl_entry)
+         *(.text.intc_irq)
++        *(.text.WS2811BB_SendRam)
+         *(.text.intc_fiq)
+         *(.text.bk_timer_isr)
+         *(.text.power_save_wakeup_isr)
